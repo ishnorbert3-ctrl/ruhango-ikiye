@@ -140,7 +140,7 @@ function Dashboard() {
 
                     <div>
                         <h2>RUHANGO</h2>
-                        <span>IKIYE</span>
+                        <span>IKEYE</span>
                     </div>
                 </div>
 

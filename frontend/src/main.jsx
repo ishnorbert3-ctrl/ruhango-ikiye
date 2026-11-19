@@ -17,6 +17,8 @@ import Users from "./page/Users.jsx";
 
 import RequestCollection from "./page/requestCollection.jsx";
 import ReportWaste from "./page/reportWaste.jsx";
+import Recycling from "./recycling.jsx";
+
 
 
 import "./index.css";
@@ -37,6 +39,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/users" element={<Users />} />
         <Route path="/request-collection" element={<RequestCollection />} />
         <Route path="/report-waste" element={<ReportWaste />} />
+        <Route path="/recycling" element={<Recycling />} />
+        
         
       </Routes>
     </BrowserRouter>

@@ -37,7 +37,7 @@ function ReportWaste() {
             <header className="report-header">
                 <div className="report-logo">
                     <Leaf size={25} />
-                    <span>RUHANGO <strong>IKIYE</strong></span>
+                    <span>RUHANGO <strong>IKEYE</strong></span>
                 </div>
 
                 <button onClick={() => navigate("/services")}>
