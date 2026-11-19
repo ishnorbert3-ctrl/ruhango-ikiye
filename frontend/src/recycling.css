@@ -1,0 +1,288 @@
+
+.recycling-page {
+    min-height: 100vh;
+    background: #f5faf6;
+    color: #183b2a;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.recycling-header {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.recycling-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #168443;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.recycling-logo strong {
+    color: #183b2a;
+}
+
+.recycling-header button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8f5ec;
+    color: #168443;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.recycling-header button:hover {
+    background: #168443;
+    color: white;
+}
+
+/* HERO SECTION */
+.recycling-hero {
+    min-height: 350px;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #126b36, #20a45a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.recycling-hero-content {
+    max-width: 600px;
+}
+
+.recycling-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.recycling-hero h1 {
+    font-size: 43px;
+    margin: 20px 0 15px;
+}
+
+.recycling-hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e6f5eb;
+    max-width: 520px;
+}
+
+.recycling-hero-content button {
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: white;
+    color: #168443;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.recycling-hero-content button:hover {
+    background: #e8f5ec;
+    transform: translateY(-3px);
+}
+
+.recycling-hero-icon {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* MAIN CONTENT */
+.recycling-content {
+    width: 88%;
+    max-width: 1200px;
+    margin: 65px auto;
+}
+
+.recycling-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recycling-heading > svg {
+    color: #168443;
+}
+
+.recycling-heading h2 {
+    font-size: 30px;
+    color: #183b2a;
+    margin: 15px 0 10px;
+}
+
+.recycling-heading p {
+    color: #6b7c70;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* CARDS */
+.recycling-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.recycling-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 14px;
+    border: 1px solid #e5eee7;
+    box-shadow: 0 5px 20px rgba(22, 132, 67, 0.06);
+    transition: 0.3s;
+}
+
+.recycling-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(22, 132, 67, 0.12);
+}
+
+.recycling-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #e8f5ec;
+    color: #168443;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.recycling-card h3 {
+    color: #183b2a;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.recycling-card p {
+    color: #6b7c70;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* BOTTOM MESSAGE */
+.recycling-message {
+    margin-top: 60px;
+    padding: 45px 25px;
+    background: #e8f5ec;
+    border-radius: 16px;
+    text-align: center;
+    color: #168443;
+}
+
+.recycling-message h2 {
+    color: #183b2a;
+    font-size: 27px;
+    margin: 15px 0 10px;
+}
+
+.recycling-message p {
+    color: #6b7c70;
+    line-height: 1.7;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .recycling-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recycling-hero h1 {
+        font-size: 35px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .recycling-header {
+        padding: 15px 5%;
+    }
+
+    .recycling-logo {
+        font-size: 15px;
+    }
+
+    .recycling-header button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .recycling-hero {
+        padding: 45px 7%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recycling-hero h1 {
+        font-size: 29px;
+    }
+
+    .recycling-hero p {
+        font-size: 14px;
+    }
+
+    .recycling-hero-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .recycling-hero-icon svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .recycling-content {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .recycling-heading h2 {
+        font-size: 23px;
+    }
+
+    .recycling-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recycling-card {
+        padding: 25px 20px;
+    }
+
+    .recycling-message h2 {
+        font-size: 22px;
+    }
+}

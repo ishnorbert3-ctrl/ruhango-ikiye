@@ -1,0 +1,338 @@
+
+/* ==============================
+   RUHANGO IKIYE - USERS MANAGEMENT
+============================== */
+
+.users-container {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f5f8f5;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* HEADER */
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.users-header h1 {
+  color: #166534;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.users-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.users-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  background: #15803d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.users-refresh-btn:hover {
+  background: #166534;
+}
+
+/* STATISTICS */
+
+.users-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.users-stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.users-stat-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.users-stat-card h3 {
+  font-size: 24px;
+  color: #166534;
+  margin-bottom: 5px;
+}
+
+.users-stat-card p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* SEARCH SECTION */
+
+.users-toolbar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.users-search {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+.users-search input {
+  width: 100%;
+  padding: 12px 15px 12px 42px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.users-search input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.users-search svg {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.users-filter {
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* TABLE */
+
+.users-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.users-table thead {
+  background: #f0fdf4;
+}
+
+.users-table th {
+  padding: 17px 15px;
+  text-align: left;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.users-table td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+}
+
+.users-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* USER NAME */
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ROLE BADGES */
+
+.role-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.role-admin {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.role-resident {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.role-collector {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+/* ROLE SELECT */
+
+.users-table select {
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* DELETE BUTTON */
+
+.users-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #dc2626;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.users-delete-btn:hover {
+  background: #dc2626;
+  color: white;
+}
+
+.users-delete-btn:disabled,
+.users-table select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* LOADING AND EMPTY STATES */
+
+.users-loading,
+.users-empty {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+  background: white;
+  border-radius: 12px;
+}
+
+.users-error {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .users-container {
+    padding: 18px;
+  }
+
+  .users-header h1 {
+    font-size: 24px;
+  }
+
+  .users-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .users-toolbar {
+    align-items: stretch;
+  }
+
+  .users-search {
+    min-width: 100%;
+  }
+
+  .users-filter {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .users-container {
+    padding: 12px;
+  }
+
+  .users-header {
+    align-items: flex-start;
+  }
+
+  .users-header h1 {
+    font-size: 21px;
+  }
+
+  .users-refresh-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

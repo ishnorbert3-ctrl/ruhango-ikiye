@@ -1,0 +1,212 @@
+
+/* REQUEST PAGE */
+.request-page {
+    min-height: 100vh;
+    background: #f5faf6;
+    font-family: Arial, sans-serif;
+    color: #183b2a;
+    padding-bottom: 50px;
+}
+
+/* HEADER */
+.request-header {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.request-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #168443;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.request-logo strong {
+    color: #183b2a;
+}
+
+.request-header button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8f5ec;
+    color: #168443;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.request-header button:hover {
+    background: #168443;
+    color: white;
+}
+
+/* MAIN CONTENT */
+.request-content {
+    width: 90%;
+    max-width: 750px;
+    margin: 50px auto;
+}
+
+/* TITLE */
+.request-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.request-title > svg {
+    color: #168443;
+    margin-bottom: 10px;
+}
+
+.request-title h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #183b2a;
+}
+
+.request-title p {
+    color: #6b7c70;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* FORM */
+.request-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 35px rgba(22, 132, 67, 0.08);
+    border: 1px solid #e5eee7;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.request-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #254b34;
+    margin-top: 8px;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce7df;
+    border-radius: 8px;
+    outline: none;
+    background: #fbfdfb;
+    color: #183b2a;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.request-form input:focus,
+.request-form select:focus,
+.request-form textarea:focus {
+    border-color: #168443;
+    box-shadow: 0 0 0 3px rgba(22, 132, 67, 0.10);
+    background: #ffffff;
+}
+
+.request-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.request-form input::placeholder,
+.request-form textarea::placeholder {
+    color: #9aa99e;
+}
+
+/* SUBMIT BUTTON */
+.request-form > button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    background: #168443;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.request-form > button:hover {
+    background: #106b35;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(22, 132, 67, 0.2);
+}
+
+.request-form > button:disabled {
+    background: #8eb99b;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* MESSAGE */
+.request-message {
+    padding: 13px;
+    background: #e8f5ec;
+    border-left: 4px solid #168443;
+    color: #126b36;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .request-header {
+        padding: 15px 5%;
+    }
+
+    .request-logo {
+        font-size: 16px;
+    }
+
+    .request-header button {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    .request-content {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    .request-title h1 {
+        font-size: 25px;
+    }
+
+    .request-title p {
+        font-size: 13px;
+    }
+
+    .request-form {
+        padding: 22px 18px;
+    }
+
+    .request-form input,
+    .request-form select,
+    .request-form textarea {
+        padding: 12px;
+    }
+}

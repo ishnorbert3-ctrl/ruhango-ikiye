@@ -1,0 +1,252 @@
+
+.users-page {
+    padding: 30px;
+    min-height: 100vh;
+    background: #f5f8f6;
+    font-family: Arial, sans-serif;
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.users-header h1 {
+    color: #174d34;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.users-header p,
+.users-toolbar p {
+    color: #78857d;
+    margin: 0;
+    font-size: 14px;
+}
+
+.users-refresh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px;
+    background: #176b45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.users-refresh:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.users-summary {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    max-width: 300px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.users-summary-icon {
+    background: #e4f5eb;
+    color: #176b45;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.users-summary h2 {
+    margin: 0 0 5px;
+    color: #174d34;
+    font-size: 27px;
+}
+
+.users-summary p {
+    margin: 0;
+    color: #78857d;
+    font-size: 13px;
+}
+
+.users-container {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.users-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.users-toolbar h2 {
+    color: #174d34;
+    margin: 0 0 7px;
+    font-size: 20px;
+}
+
+.users-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #dce5df;
+    border-radius: 8px;
+    padding: 0 12px;
+    width: 300px;
+    color: #718078;
+}
+
+.users-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.users-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.users-table th {
+    background: #f2f7f3;
+    color: #52705e;
+    font-size: 12px;
+    text-align: left;
+    padding: 15px 12px;
+    white-space: nowrap;
+}
+
+.users-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #edf1ee;
+    color: #58665d;
+    font-size: 13px;
+}
+
+.users-name {
+    font-weight: 600;
+    color: #214d35 !important;
+}
+
+.users-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.users-role.admin {
+    background: #e9e7ff;
+    color: #5746a8;
+}
+
+.users-role.resident {
+    background: #e4f5eb;
+    color: #176b45;
+}
+
+.users-role.collector {
+    background: #fff2d9;
+    color: #a56b12;
+}
+
+.users-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.users-actions select {
+    padding: 8px;
+    border: 1px solid #dce5df;
+    border-radius: 6px;
+    background: white;
+    color: #315640;
+    outline: none;
+}
+
+.users-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: #d04444;
+    background: #fff0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.users-delete:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.users-success,
+.users-error {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.users-success {
+    background: #e4f5eb;
+    color: #176b45;
+}
+
+.users-error {
+    background: #fff0f0;
+    color: #bd3333;
+}
+
+.users-loading,
+.users-empty {
+    text-align: center;
+    padding: 35px !important;
+    color: #78857d !important;
+}
+
+@media (max-width: 700px) {
+    .users-page {
+        padding: 18px;
+    }
+
+    .users-header,
+    .users-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .users-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .users-container {
+        padding: 15px;
+    }
+}
